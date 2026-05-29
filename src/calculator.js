@@ -6,12 +6,18 @@
  *   - Subtraction (-): subtract numbers
  *   - Multiplication (×): multiply numbers
  *   - Division (÷): divide numbers (with division by zero handling)
+ *   - Modulo (%): returns the remainder of a divided by b
+ *   - Exponentiation (^): raises base to the power of exponent
+ *   - Square Root (√): returns the square root of a number
  *
  * Usage:
  *   node calculator.js add <num1> <num2> [...]
  *   node calculator.js subtract <num1> <num2> [...]
  *   node calculator.js multiply <num1> <num2> [...]
  *   node calculator.js divide <num1> <num2> [...]
+ *   node calculator.js modulo <num1> <num2>
+ *   node calculator.js power <base> <exponent>
+ *   node calculator.js squareRoot <num>
  */
 
 // Addition: sum all provided numbers
@@ -37,8 +43,29 @@ function divide(numbers) {
   return numbers.reduce((quotient, num, i) => (i === 0 ? num : quotient / num), 0);
 }
 
+// Modulo: returns the remainder of a divided by b
+function modulo(a, b) {
+  if (b === 0) {
+    throw new Error("Modulo by zero is not allowed.");
+  }
+  return a % b;
+}
+
+// Exponentiation: returns base raised to the exponent
+function power(base, exponent) {
+  return Math.pow(base, exponent);
+}
+
+// Square Root: returns the square root of n
+function squareRoot(n) {
+  if (n < 0) {
+    throw new Error("Square root of a negative number is not allowed.");
+  }
+  return Math.sqrt(n);
+}
+
 // Export functions for testing
-module.exports = { add, subtract, multiply, divide };
+module.exports = { add, subtract, multiply, divide, modulo, power, squareRoot };
 
 // CLI execution
 if (require.main === module) {
@@ -54,7 +81,10 @@ if (require.main === module) {
     process.exit(1);
   }
 
-  if (numbers.length < 2) {
+  if (operation === "squareRoot" && numbers.length < 1) {
+    console.error("Error: At least one number is required for squareRoot.");
+    process.exit(1);
+  } else if (operation !== "squareRoot" && numbers.length < 2) {
     console.error("Error: At least two numbers are required.");
     process.exit(1);
   }
@@ -84,9 +114,28 @@ if (require.main === module) {
         process.exit(1);
       }
       break;
+    case "modulo":
+      try {
+        result = modulo(numbers[0], numbers[1]);
+      } catch (e) {
+        console.error(`Error: ${e.message}`);
+        process.exit(1);
+      }
+      break;
+    case "power":
+      result = power(numbers[0], numbers[1]);
+      break;
+    case "squareRoot":
+      try {
+        result = squareRoot(numbers[0]);
+      } catch (e) {
+        console.error(`Error: ${e.message}`);
+        process.exit(1);
+      }
+      break;
     default:
       console.error(`Error: Unknown operation '${operation}'.`);
-      console.error("Valid operations: add, subtract, multiply, divide");
+      console.error("Valid operations: add, subtract, multiply, divide, modulo, power, squareRoot");
       process.exit(1);
   }
 
