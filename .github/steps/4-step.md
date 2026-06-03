@@ -45,7 +45,7 @@ The Copilot CLI enables you to:
 - [GitHub Copilot as a Code Reviewer](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)
 
 > [!IMPORTANT]
-> If you have restarted your codespace you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
+> If you have restarted VS Code or your terminal, you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
 > or use `/login` from within the Copilot CLI session.
 
 ### ⌨️ Activity: Complete Your Pull Request Workflow
@@ -120,3 +120,10 @@ The Copilot CLI enables you to:
 - Use `!gh pr merge --squash` to merge with a clean history
 
 </details>
+
+---
+
+### Navigation
+
+- Previous: [Step 3](3-step.md)
+- Next: [Review](x-review.md)

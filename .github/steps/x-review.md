@@ -37,3 +37,10 @@ Now that you've learned the basics, explore these additional capabilities:
 - [Copilot CLI 101](https://github.blog/ai-and-ml/github-copilot-cli-101-how-to-use-github-copilot-from-the-command-line/) - Comprehensive tutorial
 - [More GitHub Skills](https://learn.github.com/skills) - Continue learning with other exercises
 - Try using Copilot CLI in your own projects to boost productivity!
+
+---
+
+### Navigation
+
+- Previous: [Step 4](4-step.md)
+- [Back to README](../../README.md)

@@ -49,7 +49,7 @@ As you add features, Copilot CLI can help you:
 - Save and share your development sessions using `/share`
 
 > [!IMPORTANT]
-> If you have restarted your codespace you may need to run `copilot --allow-all --enable-all-github-mcp-tools` and then authenticate with GitHub again by running `/login` from within the Copilot CLI session.
+> If you have restarted VS Code or your terminal, you may need to run `copilot --allow-all --enable-all-github-mcp-tools` and then authenticate with GitHub again by running `/login` from within the Copilot CLI session.
 
 > [!NOTE]
 > The `--allow-all` option in the Copilot CLI enables all permissions at once:
@@ -145,3 +145,10 @@ As you add features, Copilot CLI can help you:
 - Use `copilot --help` to see all available command options
 
 </details>
+
+---
+
+### Navigation
+
+- Previous: [Step 2](2-step.md)
+- Next: [Step 4](4-step.md)

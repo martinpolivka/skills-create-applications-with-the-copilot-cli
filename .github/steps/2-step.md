@@ -40,7 +40,7 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
 > - [About custom agents](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-custom-agents)
 
 > [!IMPORTANT]
-> If you have restarted your codespace you may need to run `copilot --allow-all --enable-all-github-mcp-tools` and then authenticate with GitHub again by running `/login` in the Copilot CLI.
+> If you have restarted VS Code or your terminal, you may need to run `copilot --allow-all --enable-all-github-mcp-tools` and then authenticate with GitHub again by running `/login` in the Copilot CLI.
 
 ### ⌨️ Activity: Create a New Branch for the Calculator App
 
@@ -167,3 +167,10 @@ Use the `!` command in Copilot CLI to execute shell commands directly from your 
 - Remember to export your functions using `module.exports`
 
 </details>
+
+---
+
+### Navigation
+
+- Previous: [Step 1](1-step.md)
+- Next: [Step 3](3-step.md)

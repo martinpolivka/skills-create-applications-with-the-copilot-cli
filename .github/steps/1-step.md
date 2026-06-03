@@ -65,31 +65,40 @@ Issue templates help maintain consistency when team members create issues. This 
 - [GitHub Copilot CLI 101](https://github.blog/ai-and-ml/github-copilot-cli-101-how-to-use-github-copilot-from-the-command-line/)
 
 > [!IMPORTANT]
-> If you have restarted your codespace you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
+> If you have restarted VS Code or your terminal, you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
 > or use `/login` from within the Copilot CLI session.
 
 ### :keyboard: Activity 1: Getting to know your development environment
 
-1. Right-click the below button to open the **Create Codespace** page in a new tab.
+1. Clone this repository to your machine.
 
-   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
-   - The free tier of Codespaces that comes with all GitHub accounts is fine, assuming you still have minutes available.
-   - The default Codespace settings are fine.
+   [![Clone in VS Code](https://img.shields.io/badge/Clone%20in-VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](vscode://vscode.git/clone?url=https://github.com/{{full_repo_name}}.git)
+
+   Or use the terminal:
+
+   ```bash
+   # Clone the prepared workshop repository and enter its folder.
+   git clone https://github.com/{{full_repo_name}}.git
+   cd skills-create-applications-with-the-copilot-cli
+   ```
 
 > [!IMPORTANT]
-> This Codespace VS Code environment has been simplified to focus on using the Copilot CLI in the terminal. You'll primarily be working with terminal commands rather than the full VS Code feature set.
+> This VS Code environment focuses on using the Copilot CLI in the terminal. You'll primarily be working with terminal commands rather than the full VS Code feature set.
 
-1. Confirm the **Repository** field is your copy of the exercise, not the original, then click the green **Create Codespace** button.
-   - ✅ Your copy: `/{{full_repo_name}}`
-   - ❌ Original: `/arilivigni/create-applications-with-the-copilot-CLI`
+1. Open the cloned repository in VS Code.
 
-1. Wait a moment for Visual Studio Code to load.
+1. Before making changes, create your own participant branch.
+
+   ```bash
+   # Create a participant branch for your lab work.
+   git switch -c participant/<your-name>
+   ```
 
 1. We will be focused on the full terminal window since this is all about the CLI.
 
 ### ⌨️ Activity 2: Install the Standalone Copilot CLI
 
-1. Open your Codespace (if not already open)
+1. Open your cloned repository in VS Code if it is not already open.
 
 1. Install the standalone GitHub Copilot CLI by running in the terminal window:
 
@@ -213,3 +222,10 @@ Issue templates help maintain consistency when team members create issues. This 
 - You can also create the issue through the GitHub UI if needed
 
 </details>
+
+---
+
+### Navigation
+
+- [Back to README](../../README.md)
+- Next: [Step 2](2-step.md)
