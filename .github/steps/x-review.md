@@ -35,7 +35,6 @@ Now that you've learned the basics, explore these additional capabilities:
 - [GitHub Copilot Documentation](https://docs.github.com/en/copilot) - Learn more about all Copilot features
 - [Using the Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) - Official Copilot CLI guide
 - [Copilot CLI 101](https://github.blog/ai-and-ml/github-copilot-cli-101-how-to-use-github-copilot-from-the-command-line/) - Comprehensive tutorial
-- [More GitHub Skills](https://learn.github.com/skills) - Continue learning with other exercises
 - Try using Copilot CLI in your own projects to boost productivity!
 
 ---
