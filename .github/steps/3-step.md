@@ -129,8 +129,6 @@ As you add features, Copilot CLI can help you:
    > Push the changes
    > ```
 
-1. Wait a moment for Mona to check your work, provide feedback, and share the next lesson.
-
 > [!TIP]
 > Use `/share gist` in your Copilot CLI session to save your GitHub Skills exercise session as a GitHub gist for future reference!
 
@@ -150,5 +148,5 @@ As you add features, Copilot CLI can help you:
 
 ### Navigation
 
-- Previous: [Step 2](2-step.md)
 - Next: [Step 4](4-step.md)
+- Previous: [Step 2](2-step.md)

@@ -203,8 +203,6 @@ Issue templates help maintain consistency when team members create issues. This 
    > List the issue link when complete
    > ```
 
-5. Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
-
 > [!NOTE]
 > Copilot CLI may ask to confirm creating the issue and using `gh issue` and `git config`.
 > Respond **yes** to creating the issue and

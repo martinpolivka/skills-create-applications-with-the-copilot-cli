@@ -101,8 +101,6 @@ The Copilot CLI enables you to:
    > and "Add more operations" issues are now closed.
    > ```
 
-6. Wait a moment for Mona to check your work, provide feedback, and share the next lesson.
-
 > [!TIP]
 > Use `/share gist` in your Copilot CLI session to save your GitHub Skills exercise session
 > as a GitHub gist for documentation and future reference!
@@ -125,5 +123,5 @@ The Copilot CLI enables you to:
 
 ### Navigation
 
-- Previous: [Step 3](3-step.md)
 - Next: [Review](x-review.md)
+- Previous: [Step 3](3-step.md)
