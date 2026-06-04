@@ -7,7 +7,7 @@ Duck is getting ready to develop a new Node.js CLI calculator app and plans to i
 
 #### What is GitHub Copilot CLI?
 
-GitHub Copilot CLI is a **standalone terminal application** that brings the power of GitHub Copilot directly to your command line. It is installed via npm and provides a rich interactive experience for developers.
+GitHub Copilot CLI is a **standalone terminal application** that brings the power of GitHub Copilot directly to your command line. It can be installed with operating-system package managers or the official install script and provides a rich interactive experience for developers.
 
 <img width="60%" height="60%" alt="CopilotCLI" src="../images/copilot-cli.png" />
 
@@ -46,9 +46,10 @@ GitHub Copilot CLI is a **standalone terminal application** that brings the powe
 
 To install Copilot CLI, you need:
 
-- Node.js version 22 or later
-- npm version 10 or later
 - An active GitHub Copilot subscription (Free, Pro, Pro+, Business, or Enterprise)
+- Permission to install applications on your computer
+
+Node.js 22 or later and npm 10 or later are still needed later in this lab for building and testing the Node.js calculator app, but they are not required to install Copilot CLI.
 
 #### Issue Templates
 
@@ -100,12 +101,33 @@ Issue templates help maintain consistency when team members create issues. This 
 
 1. Open your cloned repository in VS Code if it is not already open.
 
-1. Install the standalone GitHub Copilot CLI by running in the terminal window:
+1. Install the standalone GitHub Copilot CLI with the option for your operating system:
+
+   **Windows with WinGet**
+
+   > ![Static Badge](https://img.shields.io/badge/PowerShell-text?logo=powershell&labelColor=0969da&color=ddf4ff)
+   >
+   > ```powershell
+   > # Install the standalone GitHub Copilot CLI on Windows.
+   > winget install GitHub.Copilot
+   > ```
+
+   **macOS or Linux with Homebrew**
 
    > ![Static Badge](https://img.shields.io/badge/Terminal-text?logo=gnometerminal&labelColor=0969da&color=ddf4ff)
-
+   >
    > ```bash
-   > npm install -g @github/copilot
+   > # Install the standalone GitHub Copilot CLI with Homebrew.
+   > brew install copilot-cli
+   > ```
+
+   **macOS or Linux with the install script**
+
+   > ![Static Badge](https://img.shields.io/badge/Terminal-text?logo=gnometerminal&labelColor=0969da&color=ddf4ff)
+   >
+   > ```bash
+   > # Install the standalone GitHub Copilot CLI using GitHub's install script.
+   > curl -fsSL https://gh.io/copilot-install | bash
    > ```
 
 1. Verify the installation by running:
@@ -213,8 +235,8 @@ Issue templates help maintain consistency when team members create issues. This 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- Make sure you have Node.js 22+ installed: `node --version`
-- If npm install fails, try: `sudo npm install -g @github/copilot`
+- Make sure the `copilot` command is available in your terminal: `copilot --version`
+- If installation fails, check that you used the right installer for your operating system and that your terminal has permission to install applications.
 - Make sure you have GitHub Copilot access enabled for your account
 - If authentication fails, run `copilot` and run `/login`
 - You can also create the issue through the GitHub UI if needed

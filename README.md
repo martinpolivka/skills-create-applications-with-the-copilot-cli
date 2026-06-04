@@ -10,10 +10,22 @@ _Learn to use GitHub Copilot CLI—a standalone terminal application—for issue
 - **Prerequisites**:
   - Familiarity with basic command line (CLI) operations
   - Basic knowledge of GitHub repositories
-  - Node.js version 22 or later (for Copilot CLI installation)
-  - A GitHub Copilot subscription (Free, Pro, Pro+, Business, or Enterprise)
+  - Node.js version 22 or later and npm 10 or later for the Node.js calculator app
+  - GitHub Copilot access assigned to your account
 
 - **How long**: This exercise takes less than 60 minutes to complete.
+
+### Local prerequisites
+
+Codespaces are not used in this workshop. Before you start, make sure your computer has:
+
+- [Git](https://git-scm.com/) and access to push branches to this repository.
+- [Visual Studio Code](https://code.visualstudio.com/) with an integrated terminal.
+- GitHub Copilot access for your GitHub account.
+- [GitHub CLI](https://cli.github.com/) installed and authenticated with `gh auth login`.
+- GitHub Copilot CLI installed through WinGet, Homebrew, or the official install script, or permission to install it during Step 1.
+- Node.js 22 or later and npm 10 or later for building and testing the Node.js calculator app.
+- Network access to GitHub, npm, and the Copilot service.
 
 In this exercise, you will:
 

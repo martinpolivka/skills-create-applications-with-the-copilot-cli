@@ -161,7 +161,7 @@ Use the `!` command in Copilot CLI to execute shell commands directly from your 
 <summary>Having trouble? 🤷</summary><br/>
 
 - Make sure you're in the repository directory when running commands
-- The `copilot` command requires Node.js 22+ to be installed
+- The generated calculator app requires Node.js 22+ to build and test
 - If authentication fails, run `copilot` and follow the login prompts
 - You can also edit the calculator.js file manually based on Copilot's suggestions
 - Remember to export your functions using `module.exports`
