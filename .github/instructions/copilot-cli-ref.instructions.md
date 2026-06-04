@@ -55,12 +55,15 @@ Respects instructions sourced from various locations:
 - `$HOME/.copilot/copilot-instructions.md`
 - Additional directories via `COPILOT_CUSTOM_INSTRUCTIONS_DIRS`
 
+Learn more about the open `AGENTS.md` format: https://agents.md/
+
 ## Learn more
 
 To learn about what I can do:
 
 - Ask me "What can you do?"
 - Or visit: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli
+- Learn about portable agent skills: https://agentskills.io/
 
 ## Available commands
 

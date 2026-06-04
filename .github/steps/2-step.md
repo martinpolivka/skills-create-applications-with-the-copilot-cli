@@ -38,6 +38,8 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
 > - [Using GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
 > - [Custom agents in Copilot CLI](https://github.blog/changelog/2025-10-28-github-copilot-cli-use-custom-agents-and-delegate-to-copilot-coding-agent/)
 > - [About custom agents](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-custom-agents)
+> - [AGENTS.md](https://agents.md/) for portable coding-agent instructions
+> - [Agent Skills](https://agentskills.io/) for reusable agent workflows
 
 > [!IMPORTANT]
 > If you have restarted VS Code or your terminal, you may need to run `copilot --allow-all --enable-all-github-mcp-tools` and then authenticate with GitHub again by running `/login` in the Copilot CLI.

@@ -26,6 +26,8 @@ In this exercise, you will:
 GitHub Copilot CLI is a standalone terminal application with exciting features:
 - **Latest AI models**: Access the newest models from OpenAI and Google
 - **Custom agents**: Create specialized agent personas for your workflows using `.github/agents/`
+- **Portable instructions**: Use formats such as [`AGENTS.md`](https://agents.md/) for shared coding-agent guidance
+- **Agent skills**: Package reusable workflows using the broader [Agent Skills](https://agentskills.io/) pattern
 - **`/delegate` command**: Delegate tasks to Copilot coding agent which works autonomously
 - **`/share` command**: Save chat sessions as Markdown files or GitHub gists
 - **Better image support**: Add images via paste and drag-and-drop
