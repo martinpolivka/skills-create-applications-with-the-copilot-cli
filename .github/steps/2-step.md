@@ -60,21 +60,22 @@ When you have larger tasks, you can delegate them to Copilot coding agent:
 > This allows the CLI to access any file path, use any tool, and access any URL without prompting for confirmation.
 > Use with caution, as it grants the CLI full access and automation capabilities.
 
-2. Create and push a new branch called `create-calc-app`:
+2. Confirm you are working on your `participant/<your-name>` branch:
 
    > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
    >
    > ```prompt
-   > Create and push a new branch called 'create-calc-app'
+   > Confirm I am on my participant branch and push it to GitHub if it is not already published.
    > ```
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-Use the `!` command in Copilot CLI to execute shell commands directly from your chat session. For example, to create and push the branch without leaving chat:
+Use the `!` command in Copilot CLI to execute shell commands directly from your chat session. For example, to check and publish your current participant branch without leaving chat:
 
  ```prompt
- !git checkout -b create-calc-app && git push -u origin create-calc-app
+ !git branch --show-current
+ !git push -u origin HEAD
  ```
 
  Verify the current branch afterward:

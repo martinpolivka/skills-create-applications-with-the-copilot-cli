@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - create-calc-app
+      - 'participant/*'
     paths:
       - 'src/*.js'
 

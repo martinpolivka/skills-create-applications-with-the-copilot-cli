@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - 'participant/*'
 
 permissions:
   contents: write
@@ -36,7 +36,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
 
       - name: Get response templates
         uses: actions/checkout@v5
