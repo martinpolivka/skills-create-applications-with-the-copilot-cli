@@ -214,6 +214,8 @@ Issue templates help maintain consistency when team members create issues. This 
    > .github/ISSUE_TEMPLATE/feature_request.md template and make sure the issue is in a
    > markdown format that contains "calculator" in the title and follows the format of
    > the issue template.
+   > Prefix the issue title with my participant branch in square brackets, for example
+   > [participant/<your-name>] Calculator app.
    > I want to request a feature for basic arithmetic operations including
    > - addition
    > - subtraction
