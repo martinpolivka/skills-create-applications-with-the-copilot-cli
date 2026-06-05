@@ -10,7 +10,7 @@ Here's a recap of your accomplishments:
 - ✅ Generate a Node.js CLI calculator app
 - ✅ Expand calculator functionality
 - ✅ Write unit tests for calculator functions
-- ✅ Create, Review, and Merge your Pull Request
+- ✅ Create and review your Pull Request
 
 ### Explore More Copilot CLI Features
 

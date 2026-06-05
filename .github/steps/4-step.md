@@ -1,4 +1,4 @@
-## Step 4: Create, Review, and Merge Your Pull Request
+## Step 4: Create and Review Your Pull Request
 
 Duck is ready to finalize the development work by creating a pull request, linking it to both issues, getting a review from Copilot, and merging the changes—all from the command line with Copilot CLI.
 
@@ -79,20 +79,21 @@ The Copilot CLI enables you to:
    > "Add more operations" issues so they close automatically when merged.
    > ```
 
-4. Merge the pull request after Copilot's review is complete:
+4. Review Copilot's feedback when it is available, then leave the pull request open for instructor review.
 
    > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
    >
    > ```prompt
-   > Merge the pull request and close the attached issues
+   > Show me the pull request review comments and summarize any follow-up changes I should make.
    > ```
 
 > [!NOTE]
 > When you merge a PR that's linked to issues using "Closes #<issue-number>",
 > GitHub automatically closes those issues. The squash merge option keeps your
 > main branch history clean.
+> In the workshop, leave participant pull requests open. The instructor or repository owner decides what happens after review.
 
-5. Verify that both issues are now closed:
+5. Verify that both issues are linked from the pull request:
 
    > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
    >
