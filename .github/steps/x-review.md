@@ -10,11 +10,11 @@ Here's a recap of your accomplishments:
 - ✅ Generate a Node.js CLI calculator app
 - ✅ Expand calculator functionality
 - ✅ Write unit tests for calculator functions
-- ✅ Create and review your Pull Request
+- ✅ Keep your completed workshop changes in your fork
 
 ### Final workshop handoff
 
-Open a pull request from your `participant/<your-name>` branch in your fork to the `main` branch of the original `martinpolivka` repository. Do not merge the pull request yourself. The workshop instructor will review and approve it.
+Keep your completed work in the `participant/<your-name>` branch in your fork. Do not open a pull request back to the original `martinpolivka` repository and do not merge workshop changes there.
 
 ### Explore More Copilot CLI Features
 
