@@ -12,6 +12,10 @@ Here's a recap of your accomplishments:
 - ✅ Write unit tests for calculator functions
 - ✅ Create and review your Pull Request
 
+### Final workshop handoff
+
+Open a pull request from your `participant/<your-name>` branch in your fork to the `main` branch of the original `martinpolivka` repository. Do not merge the pull request yourself. The workshop instructor will review and approve it.
+
 ### Explore More Copilot CLI Features
 
 Now that you've learned the basics, explore these additional capabilities:

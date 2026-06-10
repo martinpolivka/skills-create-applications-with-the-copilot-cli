@@ -17,7 +17,7 @@ _Learn to use GitHub Copilot CLI—a standalone terminal application—for issue
 
 Before you start, make sure your computer has:
 
-- [Git](https://git-scm.com/) and access to push branches to this repository.
+- [Git](https://git-scm.com/) and a GitHub.com account that can fork this public repository.
 - [Visual Studio Code](https://code.visualstudio.com/) with an integrated terminal.
 - GitHub Copilot access for your GitHub account.
 - [GitHub CLI](https://cli.github.com/) installed and authenticated with `gh auth login`.
@@ -47,7 +47,7 @@ GitHub Copilot CLI is a standalone terminal application with exciting features:
 
 ### How to start this exercise
 
-Before making any changes, create your own branch. Use a branch name that identifies you, for example `participant/<your-name>`.
+Before making any changes, fork this repository to your own GitHub account. Do not create branches or commit directly in the original `martinpolivka` repository. Create your participant branch in your fork. Use a branch name that identifies you, for example `participant/<your-name>`.
 
 Continue with [Step 1](.github/steps/1-step.md).
 

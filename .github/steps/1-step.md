@@ -71,15 +71,15 @@ Issue templates help maintain consistency when team members create issues. This 
 
 ### :keyboard: Activity 1: Getting to know your development environment
 
-1. Clone this repository to your machine.
+1. Fork this repository to your own GitHub account.
 
-   [![Clone in VS Code](https://img.shields.io/badge/Clone%20in-VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](vscode://vscode.git/clone?url=https://github.com/martinpolivka/skills-create-applications-with-the-copilot-cli.git)
+   Do not create branches or commit directly in the original `martinpolivka` repository. All workshop changes should be made in a branch in your fork, then submitted back with a pull request.
 
-   Or use the terminal:
+1. Clone your fork to your machine.
 
    ```bash
-   # Clone the prepared workshop repository and enter its folder.
-   git clone https://github.com/martinpolivka/skills-create-applications-with-the-copilot-cli.git
+   # Clone your fork of the prepared workshop repository and enter its folder.
+   git clone https://github.com/<your-github-username>/skills-create-applications-with-the-copilot-cli.git
    cd skills-create-applications-with-the-copilot-cli
    ```
 
@@ -88,7 +88,7 @@ Issue templates help maintain consistency when team members create issues. This 
 
 1. Open the cloned repository in VS Code.
 
-1. Before making changes, create your own participant branch.
+1. Before making changes, create your own participant branch in your fork.
 
    ```bash
    # Create a participant branch for your lab work.
