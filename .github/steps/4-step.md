@@ -1,26 +1,15 @@
-## Step 4: Create and Review Your Pull Request
+## Step 4: Review Your Work in Your Fork
 
-Duck is ready to finalize the development work by creating a pull request, linking it to both issues, getting a review from Copilot, and merging the changes—all from the command line with Copilot CLI.
+Duck is ready to finalise the development work by reviewing the local changes, checking the commit history, and confirming that everything is pushed to the participant fork. Do not create a pull request back to the original repository.
 
-### 📖 Theory: Pull Requests and Code Review with Copilot CLI
+### 📖 Theory: Review Before Handoff
 
-#### Understanding Pull Requests (PRs)
+Even when workshop work stays in your fork, a short review helps you confirm that the implementation is complete and easy to explain:
 
-Pull requests are the standard way to propose changes in collaborative development:
-
-- They allow team members to review code before merging
-- They maintain a history of changes and decisions
-- They can be linked to issues for better project tracking
-- They enable automated testing and validation through CI/CD
-
-#### Connecting PRs to Issues
-
-Linking pull requests to issues helps with project management:
-
-- Closes issues automatically when the PR is merged
-- Provides traceability between work items and code changes
-- Helps track progress through the development lifecycle
-- Improves team communication about what's being built
+- Review the changed files before considering the exercise done.
+- Check that commits are on your `participant/<your-name>` branch.
+- Confirm that the branch is pushed to your fork.
+- Use Copilot CLI to summarise the implementation and suggest follow-up improvements.
 
 #### Code Review with AI Assistance
 
@@ -31,24 +20,17 @@ GitHub Copilot can act as a reviewer to:
 - Recommend best practices and design patterns
 - Provide constructive feedback on implementation
 
-The Copilot CLI enables you to:
-
-- Create pull requests directly from the terminal
-- Request reviews from Copilot or team members
-- Merge changes without leaving the CLI
-- Automate the entire workflow for faster iteration
-
 #### References
 
-- [Creating Pull Requests with GitHub CLI](https://cli.github.com/manual/gh_pr_create)
-- [Linking Issues and PRs](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
+- [Reviewing changes in Git](https://git-scm.com/docs/git-diff)
+- [Viewing commit history in Git](https://git-scm.com/docs/git-log)
 - [GitHub Copilot as a Code Reviewer](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)
 
 > [!IMPORTANT]
 > If you have restarted VS Code or your terminal, you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
 > or use `/login` from within the Copilot CLI session.
 
-### ⌨️ Activity: Complete Your Pull Request Workflow
+### ⌨️ Activity: Review and Summarise Your Forked Branch
 
 1. Start an interactive Copilot CLI session (if not already in a session):
 
@@ -58,48 +40,47 @@ The Copilot CLI enables you to:
    > copilot --allow-all --enable-all-github-mcp-tools
    > ```
 
-2. Create a pull request for your changes and add Copilot as a reviewer:
+2. Confirm that you are still on your participant branch in your fork and that there are no uncommitted changes:
 
    > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
    >
    > ```prompt
-   > Create a pull request from the current branch with a title "Add calculator enhancements" 
-   > and description that includes the main changes: basic calculator operations and expanded 
-   > functionality with modulo, power, and square root. Make sure to add @copilot as a reviewer 
-   > and request a review on the PR.
-   > List the PR link when it is completely created
+   > Confirm I am on my participant branch in my fork.
+   > Show me whether there are any uncommitted changes.
+   > Do not create a pull request.
    > ```
 
-3. Attach the pull request to both issues you created earlier:
+3. Ask Copilot CLI to review the branch contents and summarise the implementation:
 
    > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
    >
    > ```prompt
-   > Link the pull request I just created to both the "Create a calculator" and 
-   > "Add more operations" issues so they close automatically when merged.
+   > Review the changes in my current branch compared with main.
+   > Summarize what changed, call out any potential issues, and suggest
+   > any optional follow-up improvements.
+   > Do not create a pull request and do not merge anything.
    > ```
 
-4. Review Copilot's feedback when it is available, then leave the pull request open for instructor review.
+4. Push the final branch state to your fork if it is not already published:
 
    > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
    >
    > ```prompt
-   > Show me the pull request review comments and summarize any follow-up changes I should make.
+   > Confirm my participant branch is pushed to my fork.
+   > If it is not published, push it to my fork.
+   > Do not create a pull request.
    > ```
 
 > [!NOTE]
-> When you merge a PR that's linked to issues using "Closes #<issue-number>",
-> GitHub automatically closes those issues. The squash merge option keeps your
-> main branch history clean.
-> In the workshop, leave participant pull requests open. The instructor or repository owner decides what happens after review.
+> In this workshop, keep your completed work in your fork. Do not open a pull request back to the original repository.
 
-5. Verify that both issues are linked from the pull request:
+5. Create a short handoff summary for yourself:
 
    > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
    >
    > ```prompt
-   > List the closed issues in the repository to confirm both the "Create a calculator" 
-   > and "Add more operations" issues are now closed.
+   > Create a short summary of the work completed in this forked branch,
+   > including the files changed, tests run, and any follow-up ideas.
    > ```
 
 > [!TIP]
@@ -109,14 +90,11 @@ The Copilot CLI enables you to:
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- Make sure you've committed and pushed all your changes before creating the PR
+- Make sure you've committed and pushed all your changes to your fork
 - Verify your GitHub authentication with `gh auth status` or `!gh auth status` in Copilot CLI
-- If the PR creation fails, check that you're on a branch different from main/master
-- To manually link an issue, edit the PR description to include "Closes #<issue-number>"
-- You can view PR details with `!gh pr view` or `!gh pr list` to see your PRs
-- For issues that don't close automatically, link them manually in the GitHub web interface
-- Remember to check that Copilot's review has been submitted before merging
-- Use `!gh pr merge --squash` to merge with a clean history
+- Verify your remote points to your fork with `!git remote -v`
+- If push fails, check that you cloned your fork and not the original repository
+- Do not create a pull request back to the original repository
 
 </details>
 
