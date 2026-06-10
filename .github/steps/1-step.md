@@ -71,15 +71,11 @@ Issue templates help maintain consistency when team members create issues. This 
 
 ### :keyboard: Activity 1: Getting to know your development environment
 
-1. Clone this repository to your machine.
-
-   [![Clone in VS Code](https://img.shields.io/badge/Clone%20in-VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](vscode://vscode.git/clone?url=https://github.com/martinpolivka/skills-create-applications-with-the-copilot-cli.git)
-
-   Or use the terminal:
+1. Fork this repository to your own GitHub account, then clone your fork to your machine.
 
    ```bash
-   # Clone the prepared workshop repository and enter its folder.
-   git clone https://github.com/martinpolivka/skills-create-applications-with-the-copilot-cli.git
+   # Clone your fork of this prepared workshop repository and enter its folder.
+   git clone https://github.com/<your-github-username>/skills-create-applications-with-the-copilot-cli.git
    cd skills-create-applications-with-the-copilot-cli
    ```
 
